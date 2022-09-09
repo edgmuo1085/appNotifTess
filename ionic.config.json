@@ -1,0 +1,7 @@
+{
+  "name": "appNotif",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

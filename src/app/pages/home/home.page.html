@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+  <ion-progress-bar [value]="progress" class="progress"></ion-progress-bar>
+  <swiper #swiper [autoplay]="false" [virtual]="true">
+    <ng-template swiperSlide>
+      <div class="bloque-slide bg-1">
+        Slide 1
+        <h1>Bloque 1</h1>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="bloque-slide bg-2">
+        Slide 2
+        <h1>Bloque 2</h1>
+      </div></ng-template
+    >
+    <ng-template swiperSlide>
+      <div class="bloque-slide bg-3">
+        Slide 3
+        <h1>Bloque 3</h1>
+      </div>
+    </ng-template>
+  </swiper>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button (click)="slidePrev()" expand="block" color="primary">
+          <ion-icon slot="start" name="caret-back-circle-outline"></ion-icon>
+          Regresar
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button (click)="slideNext()" expand="block" color="primary">
+          <ion-icon slot="end" name="caret-forward-circle-outline"></ion-icon>
+          Siguiente
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

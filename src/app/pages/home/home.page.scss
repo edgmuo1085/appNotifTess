@@ -1,0 +1,14 @@
+.bloque-slide {
+  max-width: 100vw;
+  min-height: 30rem;
+
+  &.bg-1 {
+    background-color: rgb(230, 57, 57);
+  }
+  &.bg-2 {
+    background-color: rgb(63, 194, 122);
+  }
+  &.bg-3 {
+    background-color: rgb(70, 116, 216);
+  }
+}
